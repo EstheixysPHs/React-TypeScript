@@ -5,6 +5,10 @@ import { Usuario } from "./components/Usuario";
 
 import { TimerPadre } from "./components/TimerPadre";
 import { ContadorRed } from './components/ContadorRed';
+
+import { Formulario } from "./components/Formulario";
+import { Formulario2 } from "./components/Formulario2";
+
 function App() {
   return (
     <>
@@ -27,6 +31,23 @@ function App() {
       <ContadorRed />
 
 
+
+      <h2>customHooks</h2>
+      <hr/>
+      
+      <Formulario />
+
+      <br/>
+
+      <Formulario2 />
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
     </>
   );
