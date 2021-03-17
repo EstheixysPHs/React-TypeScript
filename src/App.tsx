@@ -9,7 +9,16 @@ import { ContadorRed } from './components/ContadorRed';
 import { Formulario } from "./components/Formulario";
 import { Formulario2 } from "./components/Formulario2";
 
+import { DataProvider } from './contex/DataContex';
+
+
+import { Pagina1 } from "./components/Pagina1";
+import { Pagina2 } from "./components/Pagina2";
+import { BotonCambiarData } from "./components/BotonCambiarData";
+
+ 
 function App() {
+ 
   return (
     <>
       <h1> React + TypeScript </h1>
@@ -42,13 +51,18 @@ function App() {
       <Formulario2 />
 
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
 
+      <h2>React: Context Api</h2>
+      <hr/>
+      <DataProvider> 
+        <div className="container">
+
+        <Pagina1  />
+        <Pagina2   />
+        <BotonCambiarData />
+
+        </div>
+    </DataProvider>
     </>
   );
 }
